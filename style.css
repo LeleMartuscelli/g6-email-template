@@ -1,0 +1,38 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f6f8;
+    font-family: arial, Helvetica, sans-serif;
+    color: #1e293b;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin:auto;
+}
+
+.hero{
+    background-color: #071a3d;
+    color:white;
+    padding: 60px 30px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
