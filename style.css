@@ -36,3 +36,50 @@ body{
     line-height: 28px;
     margin-bottom: 30px;
 }
+
+header{
+    background:#071a3d;
+    padding: 30px 0;
+    text-align:center;
+}
+
+.logo{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.slogan{
+    color:white
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 35px;
+    background:#2563eb;
+    color:white;
+    padding: 15px 35px;
+    text-decoration:none;
+    border-radius: 8px;
+    font-weight:bold;
+}
+
+.slogan{
+    background:white;
+    padding: 60px 30px;]
+}
+
+.checklist h2{
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+.checklist ul{
+    list-style:none;
+}
+
+.checklist li{
+    margin: 18px 0;
+    font-size: 18px;
+}
