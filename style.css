@@ -1,85 +1,338 @@
-/* Reset */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* RESET */
 
 body{
-    background-color: #f4f6f8;
-    font-family: arial, Helvetica, sans-serif;
-    color: #1e293b;
+    margin:0;
+    padding:0;
+    background:#f4f6f8;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#1e293b;
 }
 
-.container{
-    width: 100%;
-    max-width: 600px;
+
+table{
+    border-spacing:0;
+    border-collapse:collapse;
+}
+
+
+.email-wrapper{
+    width:100%;
+    background:#f4f6f8;
+}
+
+
+.email-container{
+    width:600px;
+    max-width:600px;
+    background:white;
+}
+
+
+
+/* HEADER */
+
+.header{
+
+    background:#071a3d;
+    text-align:center;
+    padding:35px;
+}
+
+
+.logo{
+
+    width:180px;
+    display:block;
     margin:auto;
 }
 
-.hero{
-    background-color: #071a3d;
+
+.slogan{
+
     color:white;
-    padding: 60px 30px;
-    text-align:center;
+    font-size:18px;
+    margin-top:20px;
 }
+
+
+
+/* HERO */
+
+.hero{
+
+    background:#071a3d;
+    color:white;
+    text-align:center;
+    padding:50px 35px;
+
+}
+
 
 .hero h1{
-    font-size: 42px;
-    line-height: 50px;
-    margin-bottom: 20px;
+
+    font-size:36px;
+    line-height:45px;
+    margin:0 0 20px;
+
 }
+
 
 .hero p{
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 30px;
+
+    font-size:18px;
+    line-height:28px;
+    margin-bottom:30px;
+
 }
 
-header{
-    background:#071a3d;
-    padding: 30px 0;
-    text-align:center;
-}
 
-.logo{
-    width: 180px;
-    margin-bottom: 20px;
-}
 
-.slogan{
-    color:white
-    font-size: 18px;
-    font-weight: 300;
-}
+/* BOTÃO */
 
 .btn{
-    display: inline-block;
-    margin-top: 35px;
+
     background:#2563eb;
     color:white;
-    padding: 15px 35px;
+    padding:15px 35px;
     text-decoration:none;
-    border-radius: 8px;
+    border-radius:8px;
     font-weight:bold;
+    display:inline-block;
+
 }
 
-.slogan{
+
+
+/* CHECKLIST */
+
+
+.checklist{
+
+    padding:50px 35px;
     background:white;
-    padding: 60px 30px;]
+
 }
+
 
 .checklist h2{
+
     text-align:center;
-    margin-bottom: 30px;
+    color:#071a3d;
+    margin-bottom:30px;
+
 }
 
-.checklist ul{
-    list-style:none;
+
+.list-table td{
+
+    background:#f1f5f9;
+    padding:15px;
+    margin-bottom:10px;
+    font-size:16px;
+
 }
 
-.checklist li{
-    margin: 18px 0;
-    font-size: 18px;
+
+
+
+/* SOLUÇÕES */
+
+
+.solutions{
+
+    background:#f8fafc;
+    padding:50px 35px;
+
+}
+
+
+.solutions h2{
+
+    text-align:center;
+    color:#071a3d;
+    margin-bottom:35px;
+
+}
+
+
+.cards{
+
+    width:100%;
+
+}
+
+
+.card{
+
+    background:white;
+    padding:25px;
+    margin-bottom:15px;
+
+}
+
+
+.card h3{
+
+    color:#071a3d;
+    margin-top:0;
+
+}
+
+
+.card p{
+
+    color:#475569;
+    line-height:24px;
+
+}
+
+
+
+
+/* BENEFÍCIOS */
+
+
+.benefits{
+
+    background:white;
+    padding:50px 35px;
+
+}
+
+
+.benefits h2{
+
+    text-align:center;
+    color:#071a3d;
+    margin-bottom:30px;
+
+}
+
+
+.benefits p{
+
+    font-size:17px;
+    line-height:28px;
+
+}
+
+
+
+
+
+/* CTA */
+
+
+.cta{
+
+    background:#071a3d;
+    color:white;
+    text-align:center;
+    padding:50px 35px;
+
+}
+
+
+.cta h2{
+
+    font-size:30px;
+    margin-bottom:20px;
+
+}
+
+
+.cta p{
+
+    font-size:17px;
+    line-height:26px;
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+.footer{
+
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:35px;
+
+}
+
+
+.footer-logo{
+
+    width:120px;
+}
+
+
+.footer p{
+
+    color:#cbd5e1;
+    font-size:14px;
+    line-height:22px;
+
+}
+
+
+
+.social{
+
+    margin:25px 0;
+
+}
+
+
+.social a{
+
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-size:14px;
+
+}
+
+
+
+.copyright{
+
+    font-size:12px;
+
+}
+
+
+
+/* MOBILE */
+
+@media screen and (max-width:600px){
+
+
+.email-container{
+
+    width:100%;
+
+}
+
+
+.hero h1{
+
+    font-size:28px;
+    line-height:36px;
+
+}
+
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+
 }
