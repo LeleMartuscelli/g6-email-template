@@ -135,8 +135,8 @@ h3 {
 }
 
 .hero-logo {
-    width: 190px;
-    max-width: 190px;
+    width: 300px;
+    max-width: 300px;
     height: auto;
 }
 
@@ -285,8 +285,8 @@ h3 {
 }
 
 .service-icon {
-    width: 52px;
-    max-width: 52px;
+    width: 160px;
+    max-width: 160px;
     height: auto;
 
     margin: 0 auto 8px;
@@ -665,8 +665,8 @@ h3 {
     }
 
     .service-icon {
-        width: 54px !important;
-        max-width: 54px !important;
+        width: 160px !important;
+        max-width: 160px !important;
     }
 
     .service-title {
