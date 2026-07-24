@@ -57,16 +57,13 @@ h3 {
     display: none !important;
     visibility: hidden;
     overflow: hidden;
-
     width: 0;
     height: 0;
     max-width: 0;
     max-height: 0;
-
     color: transparent;
     font-size: 1px;
     line-height: 1px;
-
     opacity: 0;
     mso-hide: all;
 }
@@ -92,15 +89,10 @@ h3 {
 
 .email-container {
     width: 100%;
-    max-width: 720px;
-
+    max-width: 900px;
     margin: 0 auto;
-
     background-color: #ffffff;
-
-    box-shadow:
-        0 8px 28px rgba(0, 25, 70, 0.14);
-
+    box-shadow: 0 8px 28px rgba(0, 25, 70, 0.14);
     overflow: hidden;
 }
 
@@ -111,57 +103,50 @@ h3 {
 
 .hero {
     height: 390px;
-
     padding: 0;
-
     background-color: #020b1c;
     background-image:
         linear-gradient(
             90deg,
             rgba(2, 11, 28, 1) 0%,
-            rgba(2, 11, 28, 0.97) 38%,
-            rgba(2, 11, 28, 0.30) 70%,
-            rgba(2, 11, 28, 0.04) 100%
+            rgba(2, 11, 28, 0.96) 38%,
+            rgba(2, 11, 28, 0.45) 68%,
+            rgba(2, 11, 28, 0.10) 100%
         ),
         url("assets/hero-visual.png");
-
     background-repeat: no-repeat;
     background-position: right center;
     background-size: auto 100%;
+    overflow: hidden;
 }
 
 .hero-content {
-    padding: 34px 24px 28px 38px;
+    padding: 34px 18px 28px 38px;
 }
 
 .hero-logo {
-    width: 300px;
-    max-width: 300px;
+    width: 280px;
+    max-width: 280px;
     height: auto;
 }
 
 .hero-tagline {
     margin-top: 6px;
-
     color: #ffffff;
-
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 700;
-    line-height: 14px;
-    letter-spacing: 0.25px;
-
+    line-height: 16px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .hero-title {
-    margin-top: 25px;
-
+    margin-top: 24px;
     color: #ffffff;
-
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 34px;
+    font-size: 40px;
     font-weight: 700;
-    line-height: 38px;
+    line-height: 46px;
     letter-spacing: -0.8px;
 }
 
@@ -171,19 +156,35 @@ h3 {
 
 .hero-description {
     max-width: 310px;
-
     margin-top: 17px;
     margin-bottom: 20px;
-
     color: #f3f5fa;
-
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 27px;
 }
 
+
+/* =========================================================
+   MASCOTE
+========================================================= */
+
 .hero-image-space {
+    position: relative;
     height: 390px;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.hero-mascot {
+    display: block;
+    width: 320px;
+    max-width: 115%;
+    height: auto;
+    margin: 30px 30px 0 auto;
+    object-fit: contain;
+    object-position: right bottom;
+    filter: drop-shadow(0 20px 24px rgba(0, 0, 0, 0.35));
 }
 
 
@@ -193,35 +194,36 @@ h3 {
 
 .button-primary-cell {
     background-color: #0868ff;
-    border-radius: 7px;
+    border-radius: 10px;
 }
 
 .button-primary {
     display: inline-block;
-
-    padding: 12px 19px;
-
-    border-radius: 7px;
-
+    padding: 16px 30px;
+    border-radius: 10px;
     color: #ffffff;
-
+    background-color: #0868ff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 18px;
-
     text-align: center;
     text-decoration: none;
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .button-primary:hover {
     background-color: #0058dc;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(8, 104, 255, 0.28);
 }
 
 .button-specialist {
     padding-right: 16px;
     padding-left: 16px;
-
     font-size: 12px;
     white-space: nowrap;
 }
@@ -232,16 +234,13 @@ h3 {
 ========================================================= */
 
 .introduction {
-    padding: 20px 38px 8px;
-
+    padding: 22px 38px 10px;
     background-color: #ffffff;
-
     text-align: center;
 }
 
 .introduction-title {
     color: #071439;
-
     font-size: 19px;
     font-weight: 700;
     line-height: 25px;
@@ -249,11 +248,8 @@ h3 {
 
 .introduction-description {
     max-width: 610px;
-
     margin: 6px auto 0;
-
     color: #30384b;
-
     font-size: 13px;
     font-weight: 400;
     line-height: 19px;
@@ -265,38 +261,59 @@ h3 {
 ========================================================= */
 
 .services {
-    padding: 12px 30px 24px;
-
+    padding: 14px 24px 26px;
     background-color: #ffffff;
 }
 
 .service-column {
     width: 25%;
-
-    padding: 11px 14px 7px;
-
-    border-right: 1px solid #e0e5ed;
-
+    padding: 7px;
     text-align: center;
+    vertical-align: top;
 }
 
 .service-column-last {
     border-right: 0;
 }
 
-.service-icon {
-    width: 160px;
-    max-width: 160px;
-    height: auto;
+.service-card {
+    height: 100%;
+    min-height: 190px;
+    padding: 18px 12px 16px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f2;
+    border-radius: 12px;
+    box-shadow: 0 5px 14px rgba(7, 20, 57, 0.07);
+    transition:
+        transform 0.28s ease,
+        box-shadow 0.28s ease,
+        border-color 0.28s ease,
+        background-color 0.28s ease;
+}
 
-    margin: 0 auto 8px;
+.service-card:hover {
+    transform: translateY(-7px);
+    border-color: #0868ff;
+    background-color: #f8fbff;
+    box-shadow: 0 14px 26px rgba(8, 104, 255, 0.16);
+}
+
+.service-icon {
+    width: 110px;
+    max-width: 110px;
+    height: 110px;
+    margin: 0 auto 10px;
+    object-fit: contain;
+    transition: transform 0.28s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.08);
 }
 
 .service-title {
-    margin-bottom: 6px;
-
+    margin-bottom: 7px;
     color: #071439;
-
     font-size: 13px;
     font-weight: 700;
     line-height: 18px;
@@ -304,7 +321,6 @@ h3 {
 
 .service-description {
     color: #3e4658;
-
     font-size: 11px;
     font-weight: 400;
     line-height: 16px;
@@ -317,9 +333,7 @@ h3 {
 
 .cta {
     padding: 14px 38px;
-
     background-color: #031744;
-
     border-top: 1px solid #0b4d9c;
     border-bottom: 1px solid #2b456c;
 }
@@ -340,9 +354,7 @@ h3 {
 
 .cta-title {
     margin-bottom: 4px;
-
     color: #ffffff;
-
     font-size: 14px;
     font-weight: 700;
     line-height: 19px;
@@ -350,7 +362,6 @@ h3 {
 
 .cta-description {
     color: #ffffff;
-
     font-size: 11px;
     font-weight: 400;
     line-height: 16px;
@@ -371,13 +382,11 @@ h3 {
 
 .footer {
     padding: 18px 38px 12px;
-
     background-color: #020b1c;
 }
 
 .footer-column {
     padding: 0 18px;
-
     border-right: 1px solid #26334c;
 }
 
@@ -387,7 +396,6 @@ h3 {
 
 .footer-social-column {
     padding-right: 0;
-
     border-right: 0;
 }
 
@@ -399,69 +407,104 @@ h3 {
 
 .footer-tagline {
     margin-top: 4px;
-
     color: #ffffff;
-
     font-size: 9px;
     line-height: 13px;
-
     text-transform: uppercase;
 }
 
 .footer-description {
     max-width: 165px;
-
     margin-top: 8px;
-
     color: #d6dbe5;
-
     font-size: 9px;
     line-height: 14px;
 }
 
-.footer-title {
-    margin-bottom: 9px;
 
+/* =========================================================
+   WEBSITE E EMAIL
+========================================================= */
+
+.footer-contact-heading {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.footer-contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
     color: #ffffff;
-
-    font-size: 11px;
+    font-size: 19px;
+    line-height: 24px;
     font-weight: 700;
-    line-height: 16px;
+}
+
+.footer-title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
 }
 
 .footer-link {
+    display: inline-block;
     color: #0875ff;
-
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 16px;
-
+    line-height: 18px;
     word-break: break-word;
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
 }
 
 .footer-link:hover {
     color: #58a1ff;
+    transform: translateX(2px);
 }
 
-.social-links {
-    margin: 0;
+
+/* =========================================================
+   REDES SOCIAIS
+========================================================= */
+
+.social-links{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+    margin-top:10px;
 }
 
-.social-link {
-    display: inline-block;
+.social-link{
+    display:flex;
+    align-items:center;
+    gap:10px;
 
-    margin-right: 9px;
+    color:#ffffff;
+    font-size:13px;
+    font-weight:500;
 
-    color: #ffffff;
-
-    font-size: 10px;
-    line-height: 16px;
+    transition:.25s;
 }
 
-.social-link:hover {
-    color: #0875ff;
+.social-link:hover{
+    color:#2d8cff;
+    transform:translateX(3px);
 }
 
+.social-icon{
+    width:20px;
+    height:20px;
+    display:block;
+}
 
 /* =========================================================
    PARTE INFERIOR DO RODAPÉ
@@ -469,26 +512,20 @@ h3 {
 
 .footer-bottom {
     padding-top: 14px;
-
     color: #8d96aa;
-
     text-align: center;
 }
 
 .footer-bottom p {
     margin: 0 0 3px;
-
     color: #8d96aa;
-
     font-size: 9px;
     line-height: 13px;
 }
 
 .unsubscribe-link {
     color: #8d96aa;
-
     font-size: 9px;
-
     text-decoration: underline;
 }
 
@@ -498,7 +535,7 @@ h3 {
 
 
 /* =========================================================
-   RESPONSIVIDADE — TABLET E CELULAR
+   RESPONSIVIDADE — TABLET
 ========================================================= */
 
 @media only screen and (max-width: 740px) {
@@ -510,40 +547,43 @@ h3 {
     .email-container {
         width: 100% !important;
         max-width: 100% !important;
-
         box-shadow: none !important;
     }
 
     .hero {
         height: auto !important;
-
         background-image:
             linear-gradient(
                 90deg,
                 rgba(2, 11, 28, 0.98) 0%,
-                rgba(2, 11, 28, 0.94) 62%,
-                rgba(2, 11, 28, 0.72) 100%
+                rgba(2, 11, 28, 0.92) 58%,
+                rgba(2, 11, 28, 0.50) 100%
             ),
             url("assets/hero-visual.png") !important;
-
         background-position: 70% center !important;
         background-size: cover !important;
     }
 
     .hero-content {
-        width: 66% !important;
-
-        padding: 30px 20px 28px 25px !important;
+        width: 60% !important;
+        padding: 30px 18px 28px 25px !important;
     }
 
     .hero-image-space {
-        width: 34% !important;
+        width: 40% !important;
         height: 365px !important;
     }
 
+    .hero-mascot {
+        width: 285px !important;
+        max-width: 115% !important;
+        margin-top: 45px !important;
+        margin-right: -10px !important;
+    }
+
     .hero-title {
-        font-size: 30px !important;
-        line-height: 34px !important;
+        font-size: 29px !important;
+        line-height: 33px !important;
     }
 
     .hero-description {
@@ -557,8 +597,17 @@ h3 {
     }
 
     .services {
-        padding-right: 20px !important;
-        padding-left: 20px !important;
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+
+    .service-column {
+        padding: 5px !important;
+    }
+
+    .service-card {
+        padding-right: 8px !important;
+        padding-left: 8px !important;
     }
 
     .cta {
@@ -580,30 +629,30 @@ h3 {
 @media only screen and (max-width: 560px) {
 
     .hero {
-        background-position: 68% center !important;
+        background-position: 67% center !important;
     }
 
     .hero-content {
         display: block !important;
-
         width: 100% !important;
-
         padding: 28px 22px 30px !important;
     }
 
     .hero-image-space {
         display: none !important;
-
         width: 0 !important;
         height: 0 !important;
         max-height: 0 !important;
-
         overflow: hidden !important;
     }
 
+    .hero-mascot {
+        display: none !important;
+    }
+
     .hero-logo {
-        width: 170px !important;
-        max-width: 170px !important;
+        width: 180px !important;
+        max-width: 180px !important;
     }
 
     .hero-tagline {
@@ -613,21 +662,18 @@ h3 {
 
     .hero-title {
         margin-top: 22px !important;
-
-        font-size: 31px !important;
-        line-height: 35px !important;
+        font-size: 30px !important;
+        line-height: 34px !important;
     }
 
     .hero-description {
         max-width: 300px !important;
-
         font-size: 13px !important;
         line-height: 19px !important;
     }
 
     .button-primary {
         padding: 12px 17px !important;
-
         font-size: 13px !important;
     }
 
@@ -646,27 +692,29 @@ h3 {
     }
 
     .services {
-        padding: 9px 22px 20px !important;
+        padding: 10px 16px 22px !important;
     }
 
     .service-column {
         display: block !important;
-
         width: 100% !important;
-
-        padding: 20px 10px !important;
-
-        border-right: 0 !important;
-        border-bottom: 1px solid #e0e5ed !important;
+        padding: 7px 0 !important;
+        border: 0 !important;
     }
 
-    .service-column-last {
-        border-bottom: 0 !important;
+    .service-card {
+        min-height: auto !important;
+        padding: 20px 18px !important;
+    }
+
+    .service-card:hover {
+        transform: none !important;
     }
 
     .service-icon {
-        width: 160px !important;
-        max-width: 160px !important;
+        width: 110px !important;
+        max-width: 110px !important;
+        height: 110px !important;
     }
 
     .service-title {
@@ -675,11 +723,9 @@ h3 {
     }
 
     .service-description {
-        max-width: 260px !important;
-
+        max-width: 280px !important;
         margin-right: auto !important;
         margin-left: auto !important;
-
         font-size: 12px !important;
         line-height: 17px !important;
     }
@@ -690,7 +736,6 @@ h3 {
 
     .cta-icon-column {
         display: none !important;
-
         width: 0 !important;
         height: 0 !important;
     }
@@ -698,9 +743,7 @@ h3 {
     .cta-text-column,
     .cta-button-column {
         display: block !important;
-
         width: 100% !important;
-
         text-align: center !important;
     }
 
@@ -715,7 +758,6 @@ h3 {
 
     .cta-description {
         margin-top: 5px !important;
-
         font-size: 12px !important;
         line-height: 17px !important;
     }
@@ -739,14 +781,10 @@ h3 {
 
     .footer-column {
         display: block !important;
-
         width: 100% !important;
-
         padding: 18px 0 !important;
-
         border-right: 0 !important;
         border-bottom: 1px solid #26334c !important;
-
         text-align: center !important;
     }
 
@@ -761,17 +799,27 @@ h3 {
 
     .footer-description {
         max-width: 250px !important;
-
         margin-right: auto !important;
         margin-left: auto !important;
     }
 
+    .footer-contact-heading {
+        justify-content: center !important;
+    }
+
+    .footer-contact-icon {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 22px !important;
+        line-height: 28px !important;
+    }
+
     .footer-title {
-        font-size: 12px !important;
+        font-size: 13px !important;
     }
 
     .footer-link {
-        font-size: 12px !important;
+        font-size: 13px !important;
     }
 
     .social-link {
@@ -788,8 +836,13 @@ h3 {
    TELAS MUITO PEQUENAS
 ========================================================= */
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 560px) {
+  
+    .social-links{
+        align-items:center;
+    }
 
+}
     .hero-title {
         font-size: 27px !important;
         line-height: 31px !important;
@@ -801,9 +854,6 @@ h3 {
 
     .button-primary {
         display: block !important;
-
         width: auto !important;
-
         text-align: center !important;
     }
-}
